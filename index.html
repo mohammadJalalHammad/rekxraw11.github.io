@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/d7aad14c0b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="dist/aos-master/dist/aos.css">
+    <title>دەزگای خێرخوازی</title>
+</head>
+
+<body class=" dark:bg-gray-900  mx-auto">
+    <div class="navbar hidden lg:flex fixed left-0 right-0 top-0 w-full  justify-around flex">
+        <div>
+            <ul class="font-bold">
+                <li>
+                    <a href="" class="p-4">
+                        سەرەتا
+                    </a>
+
+                </li>
+                <li>
+                    <a href="" class="p-4">
+                        کار و چالاکی
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="p-4">
+                        گەلەری
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="p-4">
+                        دەربارە
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="p-4">
+                        زمان <i class="fa-solid fa-sort-down mx-2"></i>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="" class="block py-2 px-4">کوردی</a>
+                        </li>
+                        <li>
+                            <a href="" class="block py-2 px-4">کوردی</a>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img src="logo.png" class="my-2 " style="height: 40px;" alt="">
+        </div>
+        <div class="mt-4 font-bold   text-white    justify-around flex text-2xl">
+            <div class="inline mx-2  rounded-lg  cursor-pointer hover:opacity-40"><i
+                    class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="inline mx-2   rounded-lg  cursor-pointer hover:opacity-40"><i
+                    class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="inline mx-2  rounded-lg  cursor-pointer hover:opacity-40"><i class="fa-brands fa-telegram"></i>
+            </div>
+            <div class="inline mx-2   rounded-lg  cursor-pointer hover:opacity-40"><i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="inline  mx-2  rounded-lg  cursor-pointer hover:opacity-40"><i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+
+    </div>
+    <div class="flex navbar lg:hidden fixed top-0 justify-between items-center px-6 right-0 p-2">
+        <div onclick="openSideBar()" class="text-white text-4xl cursor-pointer">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div>
+            <img src="logo.png" class="my-2 " style="height: 35px;" alt="">
+        </div>
+    </div>
+    <div id="sidebar" class="bg-gray-100  sidebarTop fixed top-0 right-0 w-full h-full "
+        style="z-index: +9999999999999999999999999;">
+        <div class="justify-between flex navbar border-b-2 px-4 py-1 items-center">
+            <div>
+                <img src="logo.png" class="my-2 " style="height: 25px;" alt="">
+            </div>
+            <div onclick="closeSideBar()" class="text-white text-2xl cursor-pointer">
+                <i class="fa-solid fa-times"></i>
+            </div>
+
+        </div>
+
+        <div class="sidebarContent">
+            <ul class="text-xl font-bold sidebar block w-full">
+                <li class=" block w-full   border-b border-b-gray-300 mb-2">
+                    <a href="" class="p-3 block w-full">
+                        سەرەتا
+                    </a>
+                </li>
+                <li class=" block w-full  border-b border-b-gray-300 my-2">
+                    <a href="" class="p-3 block w-full">
+                        کار و چالاکی
+                    </a>
+                </li>
+                <li class=" block w-full  border-b border-b-gray-300 my-2">
+                    <a href="" class="p-3 block w-full">
+                        گەلەری
+                    </a>
+                </li>
+                <li class=" block w-full  border-b border-b-gray-300 my-2">
+                    <a href="" class="p-3 block w-full">
+                        دەربارە
+                    </a>
+                </li>
+
+            </ul>
+            <div class="mt-4 font-bold justify-around flex">
+                <div class="inline p-2 bg-cyan-900 text-white rounded-lg px-7 cursor-pointer hover:opacity-40">کوردی
+                </div>
+                <div class="inline p-2 bg-cyan-900 text-white rounded-lg px-7 cursor-pointer hover:opacity-40">کوردی
+                </div>
+            </div>
+            <div
+                class="mt-4 font-bold absolute fixed bottom-0 navbar text-white py-2  w-full justify-around flex text-2xl">
+                <div class="inline   rounded-lg  cursor-pointer hover:opacity-40"><i
+                        class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="inline    rounded-lg  cursor-pointer hover:opacity-40"><i
+                        class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="inline   rounded-lg  cursor-pointer hover:opacity-40"><i class="fa-brands fa-telegram"></i>
+                </div>
+                <div class="inline    rounded-lg  cursor-pointer hover:opacity-40"><i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="inline    rounded-lg  cursor-pointer hover:opacity-40"><i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div dir="ltr" class="w-11/12 md:w-10/12 lg:w-9/12 xl:w-7/12 owl-carousel  m-auto" style="margin-top: 80px;">
+        <img src="child.jpg" class="w-full  overflow-hidden border " alt="">
+        <img src="R.jfif" class="w-full  overflow-hidden border " alt="">
+        <img src="child.jpg" class="w-full  overflow-hidden border " alt="">
+        <img src="R.jfif" class="w-full  overflow-hidden border " alt="">
+    </div>
+    <div class="w-full bg-gray-100  py-4 my-4 ">
+
+
+        <div class=" px-2 py-4 grid  grid-cols-2 lg:grid-cols-4  rounded-lg mb-4 lg:w-11/12 xl:w-9/12 gap-2 mx-auto">
+            <div class=" text-center p-4 rounded-lg">
+                <img src="R (1).png" width="40%" class="m-auto" alt="">
+                <div class="counters" style="font-size: 30px;">
+                    <h2 class="timer count-title count-number" data-to="9542" data-speed="2000"></h2>
+                </div>
+                <div class="text-base font-bold">
+
+                    دروستکردنی مزگەوت
+                </div>
+            </div>
+            <div class=" text-center p-4 rounded-lg">
+                <img src="R.png" width="40%" class="m-auto" alt="">
+                <div class="counters" style="font-size: 30px;">
+                    <h2 class="timer count-title count-number" data-to="14000" data-speed="2000"></h2>
+                </div>
+                <div class="text-base font-bold">
+                    دروستکردنی خانوو
+                </div>
+            </div>
+            <div class=" text-center p-4 rounded-lg">
+                <img src="R.png" width="40%" class="m-auto" alt="">
+                <div class="counters" style="font-size: 30px;">
+                    <h2 class="timer count-title count-number" data-to="25425" data-speed="2000"></h2>
+                </div>
+                <div class="text-base font-bold">
+                    دروستکردنی خانوو
+                </div>
+            </div>
+            <div class=" text-center p-4 rounded-lg">
+                <img src="R.png" width="40%" class="m-auto" alt="">
+                <div class="counters" style="font-size: 30px;">
+                    <h2 class="timer count-title count-number" data-to="56425" data-speed="2000"></h2>
+                </div>
+                <div class="text-base font-bold">
+                    دروستکردنی خانوو
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="w-full my-2 py-6 ">
+        <div class="m-auto w-11/12 xl:w-9/12 grid grid-cols-1 gap-4 xl:grid-cols-3">
+            <div class="relative cursor-pointer">
+                <img src="R.jfif" class="w-full" alt="">
+                <div class="w-full">
+                    <div class="text-lg mt-2  font-bold w-full block">
+                        ناونیشانی بابەت و کار و چاڵاکی
+                    </div>
+                    <div style="overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;"
+                        class="text-sm mt-2 text-justify opacity-80 font-bold w-full block">
+                        ڤۆلتووما سانکتوس تیکامیا نۆ سیا کیارلیک دۆلۆر لۆریم. لۆریم ئیپسوم دۆلۆر ڤیستوم دیارنا. دۆلۆر
+                        گراپس
+                        زین ترالاین چراک، پیس ستیون پراکت مەیبی ئاید ئۆن سیران تریک توو پیکتر؟ سیناریوس ژنسیار گوانین
+                        مینا
+                        ئەمیت دۆنیک کامبی تریسا لۆرێم ئیپسوم دۆلۆر سیت ئەمێت، ئیا کود ئاودیری هابێمۆس نام، ئیوم لە پورتو
+                        نەمۆر کوالیسک. نە پورتو بۆنۆرۆم پرۆ،
+                    </div>
+                </div>
+
+            </div>
+            <div class="relative cursor-pointer">
+                <img src="R.jfif" class="w-full" alt="">
+                <div class="w-full">
+                    <div class="text-lg mt-2  font-bold w-full block">
+                        ناونیشانی بابەت و کار و چاڵاکی
+                    </div>
+                    <div style="overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;"
+                        class="text-sm mt-2 text-justify opacity-80 font-bold w-full block">
+                        ڤۆلتووما سانکتوس تیکامیا نۆ سیا کیارلیک دۆلۆر لۆریم. لۆریم ئیپسوم دۆلۆر ڤیستوم دیارنا. دۆلۆر
+                        گراپس
+                        زین ترالاین چراک، پیس ستیون پراکت مەیبی ئاید ئۆن سیران تریک توو پیکتر؟ سیناریوس ژنسیار گوانین
+                        مینا
+                        ئەمیت دۆنیک کامبی تریسا لۆرێم ئیپسوم دۆلۆر سیت ئەمێت، ئیا کود ئاودیری هابێمۆس نام، ئیوم لە پورتو
+                        نەمۆر کوالیسک. نە پورتو بۆنۆرۆم پرۆ،
+                    </div>
+                </div>
+
+            </div>
+            <div class="relative cursor-pointer">
+                <img src="R.jfif" class="w-full" alt="">
+                <div class="w-full">
+                    <div class="text-lg mt-2  font-bold w-full block">
+                        ناونیشانی بابەت و کار و چاڵاکی
+                    </div>
+                    <div style="overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;"
+                        class="text-sm mt-2 text-justify opacity-80 font-bold w-full block">
+                        ڤۆلتووما سانکتوس تیکامیا نۆ سیا کیارلیک دۆلۆر لۆریم. لۆریم ئیپسوم دۆلۆر ڤیستوم دیارنا. دۆلۆر
+                        گراپس
+                        زین ترالاین چراک، پیس ستیون پراکت مەیبی ئاید ئۆن سیران تریک توو پیکتر؟ سیناریوس ژنسیار گوانین
+                        مینا
+                        ئەمیت دۆنیک کامبی تریسا لۆرێم ئیپسوم دۆلۆر سیت ئەمێت، ئیا کود ئاودیری هابێمۆس نام، ئیوم لە پورتو
+                        نەمۆر کوالیسک. نە پورتو بۆنۆرۆم پرۆ،
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full  py-4 my-4 ">
+
+
+
+        <div class=" px-2 py-4 grid  grid-cols-2 lg:grid-cols-4  rounded-lg mb-4 lg:w-11/12 xl:w-9/12 gap-2 mx-auto">
+            <div class="relative">
+                <img src="poor1.jpg" class="w-full" alt="">
+                <div class="counters absolute items-center bg-gray-900 opacity-50 top-0 text-center flex h-full w-full">
+                </div>
+                <div class="counters absolute items-center top-0 text-center flex h-full w-full"
+                    style="font-size: 30px;">
+                    <div class="w-full">
+                        <h2 class="timer mb-0 text-white count-title count-number text-center w-full block"
+                            data-to="9542" data-speed="2000"></h2>
+                        <div class="text-xl mt-0 text-white font-bold w-full block">
+                            تایتڵ
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="poor1.jpg" class="w-full" alt="">
+                <div class="counters absolute items-center bg-gray-900 opacity-50 top-0 text-center flex h-full w-full">
+                </div>
+                <div class="counters absolute items-center top-0 text-center flex h-full w-full"
+                    style="font-size: 30px;">
+                    <div class="w-full">
+                        <h2 class="timer mb-0 text-white count-title count-number text-center w-full block"
+                            data-to="9542" data-speed="2000"></h2>
+                        <div class="text-xl mt-0 text-white font-bold w-full block">
+                            تایتڵ
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="poor1.jpg" class="w-full" alt="">
+                <div class="counters absolute items-center bg-gray-900 opacity-50 top-0 text-center flex h-full w-full">
+                </div>
+                <div class="counters absolute items-center top-0 text-center flex h-full w-full"
+                    style="font-size: 30px;">
+                    <div class="w-full">
+                        <h2 class="timer mb-0 text-white count-title count-number text-center w-full block"
+                            data-to="9542" data-speed="2000"></h2>
+                        <div class="text-xl mt-0 text-white font-bold w-full block">
+                            تایتڵ
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="poor1.jpg" class="w-full" alt="">
+                <div class="counters absolute items-center bg-gray-900 opacity-50 top-0 text-center flex h-full w-full">
+                </div>
+                <div class="counters absolute items-center top-0 text-center flex h-full w-full"
+                    style="font-size: 30px;">
+                    <div class="w-full">
+                        <h2 class="timer mb-0 text-white count-title count-number text-center w-full block"
+                            data-to="9542" data-speed="2000"></h2>
+                        <div class="text-xl mt-0 text-white font-bold w-full block">
+                            تایتڵ
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="  py-2 my-4">
+        <div class="w-11/12 xl:w-7/12 m-auto">
+            <div class="text-4xl text-bold text-center"> ناوی ڕێکخراو</div>
+            <p class="text-lg mt-2 text-justify">
+                زانیاری دەربارەی ڕێکخراو
+                ڤۆلتووما سانکتوس تیکامیا نۆ سیا کیارلیک دۆلۆر لۆریم. لۆریم ئیپسوم دۆلۆر ڤیستوم دیارنا. دۆلۆر
+                گراپس
+                زین ترالاین چراک، پیس ستیون پراکت مەیبی ئاید ئۆن سیران تریک توو پیکتر؟ سیناریوس ژنسیار گوانین
+                مینا
+                ئەمیت دۆنیک کامبی تریسا لۆرێم ئیپسوم دۆلۆر سیت ئەمێت، ئیا کود ئاودیری هابێمۆس نام، ئیوم لە پورتو
+                نەمۆر کوالیسک. نە پورتو بۆنۆرۆم پرۆ،
+            </p>
+            <div class="mt-4 font-bold   py-2  w-full justify-around flex text-2xl">
+                <div class="inline   rounded-lg  cursor-pointer hover:opacity-40"><i
+                        class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="inline    rounded-lg  cursor-pointer hover:opacity-40"><i
+                        class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="inline   rounded-lg  cursor-pointer hover:opacity-40"><i class="fa-brands fa-telegram"></i>
+                </div>
+                <div class="inline    rounded-lg  cursor-pointer hover:opacity-40"><i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="inline    rounded-lg  cursor-pointer hover:opacity-40"><i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="py-4 my-4 bg-gray-100">
+        <div class="grid  grid-cols-2 xl:grid-cols-4  gap-4 my-4 w-11/12 xl:w-9/12 m-auto">
+            <div class="card relative cursor-zoom-in">
+                <img src="poor.jfif" onclick="openImage(this)" class="w-full" alt="">
+                <p class="text-base   px-2 py-2 bg-gray-900 opacity-90 text-white w-full">
+                    کاپشنی وێنە</p>
+            </div>
+            <div class="card relative cursor-zoom-in">
+                <img onclick="openImage(this)" src="poor.jfif" class="w-full" alt="">
+                <p class="text-base    px-2 py-2 bg-gray-900 opacity-90 text-white  w-full">
+                    کاپشنی وێنە</p>
+            </div>
+            <div class="card relative cursor-zoom-in">
+                <img onclick="openImage(this)" src="poor.jfif" class="w-full" alt="">
+                <p class="text-base   px-2 py-2 bg-gray-900 opacity-90 text-white  w-full">
+                    کاپشنی وێنە</p>
+            </div>
+            <div class="card relative cursor-zoom-in">
+                <img onclick="openImage(this)" src="poor.jfif" class="w-full" alt="">
+                <p class="text-base      px-2 py-2 bg-gray-900 opacity-90 text-white  w-full">
+                    کاپشنی وێنە</p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- Show Image full Screen  -->
+    <div class="fixed w-full h-full  top-0 right-0" id="fullSvcreen"
+        style="z-index: +999999999999999999999999;display: none;">
+
+        <div class="w-full  fixed top-0 left-0 flex items-center h-full text-center">
+            <div class="absolute top-4 left-4 " style="z-index: +9999999999999999999999;">
+                <i onclick="closeFullScreenImage()" class="fa fa-times cursor-pointer  text-white text-4xl"></i>
+            </div>
+            <div class="w-full h-full bg-gray-900 opacity-50 fixed top-0 left-0" onclick="closeFullScreenImage()"></div>
+            <img src="poor.jfif" class="m-auto " id="fullScreenImageIMS" onclick="zoomIn(this)"
+                style="z-index: +99999999;  max-height: 98%; max-width: 98%;" alt="">
+
+        </div>
+    </div>
+
+    <div class="navbar py-4 mt-4">
+        <div class="grid  grid-cols-1 lg:grid-cols-2 text-white gap-4 my-4 w-11/12 xl:w-9/12 m-auto">
+            <div class="lg:col-span-2">
+                <div class="mt-4 font-bold   py-2  w-full justify-around flex text-2xl">
+                    <div class="inline   rounded-lg  cursor-pointer hover:opacity-40"><i
+                            class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="inline    rounded-lg  cursor-pointer hover:opacity-40"><i
+                            class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="inline   rounded-lg  cursor-pointer hover:opacity-40"><i
+                            class="fa-brands fa-telegram"></i>
+                    </div>
+                    <div class="inline    rounded-lg  cursor-pointer hover:opacity-40"><i
+                            class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="inline    rounded-lg  cursor-pointer hover:opacity-40"><i
+                            class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="text-4xl text-bold text-center"> ناوی ڕێکخراو</div>
+                <p class="text-lg mt-2 text-justify opacity-80">
+                    زانیاری دەربارەی ڕێکخراو
+                    ڤۆلتووما سانکتوس تیکامیا نۆ سیا کیارلیک دۆلۆر لۆریم. لۆریم ئیپسوم دۆلۆر ڤیستوم دیارنا. دۆلۆر
+                    گراپس
+                    زین ترالاین چراک، پیس ستیون پراکت مەیبی ئاید ئۆن سیران تریک توو پیکتر؟ سیناریوس ژنسیار گوانین
+                    مینا
+                    ئەمیت دۆنیک کامبی تریسا لۆرێم ئیپسوم دۆلۆر سیت ئەمێت، ئیا کود ئاودیری هابێمۆس نام، ئیوم لە پورتو
+                    نەمۆر کوالیسک. نە پورتو بۆنۆرۆم پرۆ،
+                </p>
+            </div>
+            <div>
+                <div class="text-base text-center">
+                    <div class=" block w-full p-3 text-center  my-1">
+                        <a href="" class="p-3  opacity-80 hover:opacity-100  w-fit">
+                            کار و چالاکی
+                        </a>
+                    </div>
+                    <div class=" block w-full p-3  text-center my-1">
+                        <a href="" class="p-3  opacity-80 hover:opacity-100  w-fit">
+                            گەلەری
+                        </a>
+                    </div>
+                    <div class=" block w-full text-center p-3 my-1">
+                        <a href="" class="  opacity-80 hover:opacity-100  w-fit">
+                            دەربارە
+                        </a>
+                    </div>
+                    <div class="flex justify-around">
+                        <div>
+                            <a href="" class="block opacity-80 hover:opacity-100 py-2 px-4">العربیة</a>
+                        </div>
+                        <div>
+                            <a href="" class="block opacity-80 hover:opacity-100 py-2 px-4">English</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+           
+
+        </div>
+        <div class="text-center text-white">
+            مافی لەبەرگرتنەوەی بابەتەکانی ئەم ماڵپەڕە پارێزراوە بۆ %%%%%
+        </div>
+    </div>
+    <script src=""></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="dist/owl.carousel.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        var zoomImage = 1;
+        var zoomInn = 0;
+        function closeFullScreenImage() {
+            zoomImage = 1;
+            zoomInn = 0;
+            document.getElementById('fullScreenImageIMS').style.transform = "scale(" + zoomImage + ")";
+            document.getElementById('fullScreenImageIMS').classList.add('cursor-zoom-in');
+            document.getElementById('fullScreenImageIMS').classList.remove('cursor-zoom-out');
+            document.getElementById('fullScreenImageIMS').src = "";
+            $('#fullSvcreen').fadeOut();
+        }
+
+        function openImage(e) {
+            zoomImage = 1;
+            zoomInn = 0;
+            document.getElementById('fullScreenImageIMS').style.transform = "scale(" + zoomImage + ")";
+            document.getElementById('fullScreenImageIMS').classList.add('cursor-zoom-in');
+            document.getElementById('fullScreenImageIMS').classList.remove('cursor-zoom-out');
+            document.getElementById('fullScreenImageIMS').src = e.src;
+            $('#fullSvcreen').fadeIn();
+        }
+        function zoomIn(e) {
+            if (zoomImage >= 1.9) {
+
+                e.classList.remove('cursor-zoom-in');
+                e.classList.add('cursor-zoom-out');
+            }
+            if (zoomImage <= 1.1) {
+
+                e.classList.add('cursor-zoom-in');
+                e.classList.remove('cursor-zoom-out');
+            }
+            if (zoomImage >= 2) {
+                zoomInn = 1;
+                e.classList.remove('cursor-zoom-in');
+                e.classList.add('cursor-zoom-out');
+            }
+            if (zoomImage <= 1) {
+                zoomInn = 0;
+                e.classList.add('cursor-zoom-in');
+                e.classList.remove('cursor-zoom-out');
+            }
+            if (zoomInn == 0) {
+                zoomImage += 0.3;
+            } else {
+                zoomImage -= 0.3;
+            }
+            e.style.transform = "scale(" + zoomImage + ")";
+            e.style.transition = "0.3s";
+        }
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                autoHeight: false,
+                autoplay: true,
+                animateIn: 'animate__fadeIn',
+                animateOut: 'animate__fadeOut',
+                loop: true,
+                margin: 20,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: false,
+                mouseDrag: false,
+                touchDrag: false
+            });
+        });
+
+        function openSideBar() {
+            document.getElementById('sidebar').classList.add('sidebarShow');
+        }
+        function closeSideBar() {
+            document.getElementById('sidebar').classList.remove('sidebarShow');
+        }
+
+        (function ($) {
+            $.fn.countTo = function (options) {
+                options = options || {};
+
+                return $(this).each(function () {
+                    // set options for current element
+                    var settings = $.extend({}, $.fn.countTo.defaults, {
+                        from: $(this).data('from'),
+                        to: $(this).data('to'),
+                        speed: $(this).data('speed'),
+                        refreshInterval: $(this).data('refresh-interval'),
+                        decimals: $(this).data('decimals')
+                    }, options);
+
+                    // how many times to update the value, and how much to increment the value on each update
+                    var loops = Math.ceil(settings.speed / settings.refreshInterval),
+                        increment = (settings.to - settings.from) / loops;
+
+                    // references & variables that will change with each update
+                    var self = this,
+                        $self = $(this),
+                        loopCount = 0,
+                        value = settings.from,
+                        data = $self.data('countTo') || {};
+
+                    $self.data('countTo', data);
+
+                    // if an existing interval can be found, clear it first
+                    if (data.interval) {
+                        clearInterval(data.interval);
+                    }
+                    data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+                    // initialize the element with the starting value
+                    render(value);
+
+                    function updateTimer() {
+                        value += increment;
+                        loopCount++;
+
+                        render(value);
+
+                        if (typeof (settings.onUpdate) == 'function') {
+                            settings.onUpdate.call(self, value);
+                        }
+
+                        if (loopCount >= loops) {
+                            // remove the interval
+                            $self.removeData('countTo');
+                            clearInterval(data.interval);
+                            value = settings.to;
+
+                            if (typeof (settings.onComplete) == 'function') {
+                                settings.onComplete.call(self, value);
+                            }
+                        }
+                    }
+
+                    function render(value) {
+                        var formattedValue = settings.formatter.call(self, value, settings);
+                        $self.html(formattedValue);
+                    }
+                });
+            };
+
+            $.fn.countTo.defaults = {
+                from: 0,               // the number the element should start at
+                to: 0,                 // the number the element should end at
+                speed: 1000,           // how long it should take to count between the target numbers
+                refreshInterval: 100,  // how often the element should be updated
+                decimals: 0,           // the number of decimal places to show
+                formatter: formatter,  // handler for formatting the value before rendering
+                onUpdate: null,        // callback method for every time the element is updated
+                onComplete: null       // callback method for when the element finishes updating
+            };
+
+            function formatter(value, settings) {
+                return value.toFixed(settings.decimals);
+            }
+        }(jQuery));
+
+        jQuery(function ($) {
+            // custom formatting example
+            $('.count-number').data('countToOptions', {
+                formatter: function (value, options) {
+                    return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+                }
+            });
+
+            // start all the timers
+            $('.timer').each(count);
+
+            function count(options) {
+                var $this = $(this);
+                options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+                $this.countTo(options);
+            }
+        });
+
+    </script>
+</body>
+
+</html>
